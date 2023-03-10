@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashloan Arbitrage Bot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <h4>Flashloan Arbitrage Opportunities</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-group" id="opportunities-list">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <h4>Execute Trade</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="token1">Token 1 Address:</label>
+                  <input type="text" class="form-control" id="token1" required />
+                </div>
+                <div class="form-group">
+                  <label for="amount1">Token 1 Amount:</label>
+                  <input type="text" class="form-control" id="amount1" required />
+                </div>
+                <div class="form-group">
+                  <label for="token2">Token 2 Address:</label>
+                  <input type="text" class="form-control" id="token2" required />
+                </div>
+                <div class="form-group">
+                  <label for="amount2">Token 2 Amount:</label>
+                  <input type="text" class="form-control" id="amount2" required />
+                </div>
+                <div class="form-group">
+                  <label for="profit">Profit:</label>
+                  <input type="text" class="form-control" id="profit" required />
+                </div>
+                <button type="button" class="btn btn-primary" id="execute-trade">Execute Trade</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

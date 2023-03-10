@@ -1,0 +1,31 @@
+flashloan-arbitrage-bot/
+├── data/
+│   └── database.sqlite
+├── node_modules/
+├── src/
+│   ├── db.js
+│   ├── index.js
+│   ├── middlewares/
+│   │   └── authenticate.js
+│   ├── models/
+│   │   ├── arbitrage.js
+│   │   └── user.js
+│   ├── routes/
+│   │   ├── arbitrage.js
+│   │   └── auth.js
+│   ├── services/
+│   │   ├── arbitrage.js
+│   │   └── dex.js
+│   └── utils/
+│       ├── auth.js
+│       ├── encryption.js
+│       ├── validation.js
+│       └── web3.js
+├── ui/
+│   ├── index.html
+│   └── script.js
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
